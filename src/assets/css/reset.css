@@ -1,0 +1,18 @@
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, button, input, textarea,
+th, td { margin: 0;padding: 0;}
+html{font-size: 50px;}
+body,
+button, input, select, textarea { font-family: 'Avenir', Helvetica, Arial, sans-serif;}
+em{ font-style: normal; } /* 将斜体扶正 */
+/* 重置列表元素 */
+ul, ol,li { list-style: none; }
+/* 重置文本格式元素 */
+a { text-decoration: none;}
+a:hover { text-decoration: none }
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea {font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */}
+/* 重置表格元素 */
+table {border-collapse: collapse;border-spacing: 0;}
