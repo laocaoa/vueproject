@@ -1,0 +1,62 @@
+{
+	"data": {
+		"swiperList": [{
+			"id": "100",
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1812/47/a51fe403715df102.jpg_750x200_085792b6.jpg",
+			"link": "/list"
+		}, {
+			"id": "101",
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/31/da037478f37cf202.jpg_750x200_fe28d396.jpg",
+			"link": "/list"
+		}, {
+			"id": "102",
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/7c/8e5c4ab8ee8b7402.jpg_750x200_dd7a38dd.jpg",
+			"link": "/list"
+		}, {
+			"id": "103",
+			"imgUrl": "http://img1.qunarzz.com/piao/fusion/1812/d4/d51b0de13bdaeb02.jpg_750x200_a16ebfe3.jpg",
+			"link": "/list"
+		}],
+		"iconList": [{
+			"id": "500",
+			"iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+			"txt": "景点门票"
+		}, {
+			"id": "501",
+			"iconUrl": "http://img1.qunarzz.com/piao/fusion/1811/f6/e54fad3ea337b02.gif",
+			"txt": "年终大促"
+		}, {
+			"id": "502",
+			"iconUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+			"txt": "一日游"
+		}, {
+			"id": "503",
+			"iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+			"txt": "泡温泉"
+		}, {
+			"id": "504",
+			"iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+			"txt": "景点门票"
+		}, {
+			"id": "505",
+			"iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+			"txt": "景点门票"
+		}, {
+			"id": "506",
+			"iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+			"txt": "景点门票"
+		}, {
+			"id": "507",
+			"iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+			"txt": "景点门票"
+		}, {
+			"id": "508",
+			"iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+			"txt": "景点门票"
+		}, {
+			"id": "509",
+			"iconUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+			"txt": "景点门票"
+		}]
+	}
+}

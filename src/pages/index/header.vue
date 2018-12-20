@@ -2,7 +2,7 @@
   <div class="header">
     <div class="back iconfont">&#xe60e;</div>
     <div class="search">
-      <span class="iconfont search_font">&#xe65a;</span>请输入搜索内容
+      <span class="iconfont search_font">&#xe65a;</span>请输入城市/景点/游玩主题
     </div>
     <div class="city">乌鲁木齐</div>
   </div>
@@ -31,7 +31,7 @@ export default {
       flex: 1
       height: .6rem
       background: #fff
-      padding-left: .4rem
+      padding-left: .2rem
       margin: .14rem .2rem
       color: #919191
       line-height: .6rem
@@ -45,8 +45,8 @@ export default {
       position: relative
       &:before
         position:absolute
-        top: .36rem
-        right: .2rem
+        top: .38rem
+        right: .3rem
         content: "\0020"
         width: 0
         height: 0
