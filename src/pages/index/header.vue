@@ -2,7 +2,7 @@
   <div class="header">
     <div class="back iconfont">&#xe60e;</div>
     <div class="search">
-      <span class="iconfont search_font">&#xe65a;</span>请输入城市/景点/游玩主题
+      <span class="iconfont search_font">&#xe60b;</span>请输入城市/景点/游玩主题
     </div>
     <div class="city">乌鲁木齐</div>
   </div>

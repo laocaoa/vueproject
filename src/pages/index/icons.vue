@@ -25,8 +25,6 @@ export default {
   data () {
     return{
       swiperOption: {
-        // loop: true,
-        // autoplay: 2000,
         pagination: '.swiper-pagination'
       }
     }
@@ -54,6 +52,7 @@ export default {
     height: 100%!important
   .icons_container
     height: 3.8rem
+    background: #fff
     .item_area
       display: flex
       flex-wrap: wrap
@@ -70,7 +69,4 @@ export default {
         .item_txt
           font-size: .28rem
           color: #212121
-          overflow: hidden
-          white-space: nowrap
-          text-overflow: ellipsis
 </style>
