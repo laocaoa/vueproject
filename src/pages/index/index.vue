@@ -15,6 +15,8 @@
 			<li class="tour_ul_left tour_ul_li"></li>
 			<li class="tour_ul_right tour_ul_li"></li>
 		</ul>
+    <index-hot></index-hot>
+    <index-guss></index-guss>
   </div>
 </template>
 
@@ -23,6 +25,7 @@ import IndexHeader from './header'
 import IndexSwiper from './swiper'
 import IndexIcons from './icons'
 import IndexHot from './hot'
+import IndexGuss from './guss'
 import axios from 'axios'
 export default {
   name: 'index',
@@ -30,7 +33,8 @@ export default {
     IndexHeader,
     IndexSwiper,
     IndexIcons,
-		IndexHot
+		IndexHot,
+    IndexGuss
   },
   data () {
     return {
@@ -102,7 +106,7 @@ export default {
       flex-wrap: wrap
       width: 100%
       background: #fff
-      margin-top: .2rem
+      margin: .2rem 0
       .tour_ul_li
         height: 1.4rem
         width: 50%
