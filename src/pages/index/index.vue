@@ -7,7 +7,7 @@
       <li class="location_ul_left location_ul_li">
         <span class="iconfont location">&#xe647;</span>定位失败
       </li>
-      <li class="location_ul_right location_ul_li">
+      <li class="location_ul_right location_ul_li" @click="change">
 				<span class="iconfont world">&#xe670;</span>必游榜单
 			</li>
     </ul>
@@ -17,6 +17,8 @@
 		</ul>
     <index-hot></index-hot>
     <index-guss></index-guss>
+    <index-weekend></index-weekend>
+    <index-footer></index-footer>
   </div>
 </template>
 
@@ -26,6 +28,8 @@ import IndexSwiper from './swiper'
 import IndexIcons from './icons'
 import IndexHot from './hot'
 import IndexGuss from './guss'
+import IndexWeekend from './weekend'
+import IndexFooter from './footer'
 import axios from 'axios'
 export default {
   name: 'index',
@@ -34,13 +38,16 @@ export default {
     IndexSwiper,
     IndexIcons,
 		IndexHot,
-    IndexGuss
+    IndexGuss,
+    IndexWeekend,
+    IndexFooter
   },
   data () {
     return {
         swiperList: [],
         iconListOne: [],
-        iconList: []
+        iconList: [],
+				city: '白山'
     }  
   },
   methods: {
@@ -57,10 +64,15 @@ export default {
     },
     handleGetDataErr () {
         console.log('error')
-    }
+    },
+		change () {
+			this.$store.commit('changeCity', this.city)
+		}
   },   
   created () {
     this.getIndexData()
+    console.log(this.$store.state.city)
+		console.log(this.$store.getters.doubleCity)
   }
 }
 </script>

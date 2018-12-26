@@ -5,7 +5,7 @@
       <span class="title">猜你喜欢</span>
     </div>
     <ul>
-      <li>
+      <li v-for="item of 6">
         <div class="like-img-box"><img src="http://img1.qunarzz.com/sight/p0/1712/95/95f38f28a6ff19cba3.img.jpg_200x200_af967e35.jpg" alt=""></div>
         <div class="like-img-tag">随买随用</div>
         <div class="like-info">
@@ -16,10 +16,16 @@
             </div>
             <span class="comment-num">78条评论</span>
           </div>
-          <div class="like-price"></div>
+          <div class="info-price">
+            <div class="price-left">
+              <span>￥</span><em>9.9</em>起
+            </div>
+            <div class="price-right">奥林匹克公园</div>
+          </div>
         </div>
       </li>
     </ul>
+    <a href="#" class="check-all-product">查看所有产品</a>
   </div>
 </template>
 
@@ -43,11 +49,17 @@ export default {
       .title
         color: #212121;
         font-size: .32rem
+    .check-all-product
+      display: block
+      padding: .2rem 0
+      color: #00afc7
+      font-size: .28rem
+      line-height: .4rem
+      text-align: center
   .guss-you-like ul li
     position: relative
     padding: .2rem 0
     overflow: hidden
-    display: flex
     .like-img-tag
       background-image: url(https://img1.qunarzz.com/piao/fusion/1802/20/2ba6d10b17972e02.png)
       position: absolute
@@ -62,12 +74,14 @@ export default {
       text-indent: .04rem
     .like-img-box
       width: 2rem
-      height: 2rem/
+      height: 2rem
+      float: left
       img
         width: 100%
     .like-info
       padding-left: .22rem
       font-size: 0
+      overflow: hidden
       .info-title
         font-size: .32rem
         margin-top: .26rem
@@ -87,4 +101,17 @@ export default {
           font-size: .24rem
           line-height: .28rem
           padding-left: .2rem
+      .info-price
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        font-size: .24rem
+        color: #616161
+        margin-top: .12rem
+        .price-left
+          span
+            color: #ff8300
+          em
+            font-size: .4rem
+            color: #ff8300
 </style>
