@@ -10,6 +10,13 @@ const store = new Vuex.Store({
       return state.city + state.city
     }
   },
+  actions: {
+    changeCityFiveSeconds (context, city) {
+      setTimeout(() => {
+      	context.commit('changeCity', city)
+      },5000)
+    }
+  },
   mutations: {
     changeCity (state, city) {
       state.city = city

@@ -39,6 +39,7 @@ export default {
   .guss-you-like
     background: #fff
     padding: 0 .24rem
+    box-sizing: border-box
     .guss-like-header
       font-size: 0
       padding: .24rem 0 .26rem

@@ -31,6 +31,7 @@ import IndexGuss from './guss'
 import IndexWeekend from './weekend'
 import IndexFooter from './footer'
 import axios from 'axios'
+import { mapState, mapMutations, mapGetters, mapActions } from 'vuex'
 export default {
   name: 'index',
   components: {
@@ -46,11 +47,16 @@ export default {
     return {
         swiperList: [],
         iconListOne: [],
-        iconList: [],
-				city: '白山'
+        iconList: []
     }  
   },
+	computed: {
+		...mapState(['city']),
+		...mapGetters(['doubleCity'])
+	},
   methods: {
+		...mapMutations(['changeCity']),
+		...mapActions(['changeCityFiveSeconds']),
     getIndexData () {
         axios.get('./api/index.json')
           .then(this.handleGetDataSucc.bind(this))
@@ -66,13 +72,16 @@ export default {
         console.log('error')
     },
 		change () {
-			this.$store.commit('changeCity', this.city)
+			this.changeCity('哈尔滨')
+			this.changeCityFiveSeconds('日本')
+			// this.$router.push({ path: '/city', query: { id: 123 }})
+			this.$router.push({ name: 'City', params: { id: 123 }})
 		}
   },   
   created () {
     this.getIndexData()
-    console.log(this.$store.state.city)
-		console.log(this.$store.getters.doubleCity)
+    console.log(this.city)
+		console.log(this.doubleCity)
   }
 }
 </script>

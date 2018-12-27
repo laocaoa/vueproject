@@ -4,7 +4,7 @@
     <div class="search">
       <span class="iconfont search_font">&#xe60b;</span>请输入城市/景点/游玩主题
     </div>
-    <div class="city">乌鲁木齐</div>
+    <div class="city">{{$store.state.city}}</div>
   </div>
 </template>
 
