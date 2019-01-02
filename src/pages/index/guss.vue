@@ -18,7 +18,7 @@
           </div>
           <div class="info-price">
             <div class="price-left">
-              <span>￥</span><em>9.9</em>起
+              <span>&yen;</span><em>9.9</em>起
             </div>
             <div class="price-right">奥林匹克公园</div>
           </div>

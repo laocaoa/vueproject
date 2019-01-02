@@ -1,11 +1,9 @@
 <template>
   <div class="slide_container">
     <swiper :options="swiperOption" v-if="swiperShow">
-      <!-- slides -->
       <swiper-slide v-for="item of swiperList" :key="item.id">
         <img class="slide_img" :src="item.imgUrl" alt="">
       </swiper-slide>
-      <!-- Optional controls -->
       <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
   </div>

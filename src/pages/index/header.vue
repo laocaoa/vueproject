@@ -4,13 +4,17 @@
     <div class="search">
       <span class="iconfont search_font">&#xe60b;</span>请输入城市/景点/游玩主题
     </div>
-    <div class="city">{{$store.state.city}}</div>
+    <div class="city">{{city}}</div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  name: 'index-header'
+  name: 'index-header',
+	computed: {
+		...mapState(['city'])
+	}
 }
 </script>
 
@@ -35,18 +39,19 @@ export default {
       margin: .14rem .2rem
       color: #919191
       line-height: .6rem
-      border-radius: .1rem
+      border-radius: .06rem
       .search_font
         position: relative
-        top: 1px
+        top: .5px
         padding-right: .1rem
+        font-size: .3rem
     .city
-      padding-right: .6rem
+      padding-right: .56rem
       position: relative
       &:before
         position:absolute
         top: .38rem
-        right: .3rem
+        right: .24rem
         content: "\0020"
         width: 0
         height: 0

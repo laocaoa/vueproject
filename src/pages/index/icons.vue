@@ -1,7 +1,6 @@
 <template>
   <div class="icons_container">
     <swiper :options="swiperOption">
-    	<!-- slides -->
     	<swiper-slide v-for="page of pageList" :key="page.id">
     		<div class="item_area">
           <div class="item" v-for="item of page" :key="item.id">
@@ -10,7 +9,6 @@
           </div>
         </div>
     	</swiper-slide>
-    	<!-- Optional controls -->
     	<div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
   </div>

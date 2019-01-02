@@ -58,13 +58,13 @@ export default {
 		...mapMutations(['changeCity']),
 		...mapActions(['changeCityFiveSeconds']),
     getIndexData () {
-        axios.get('./api/index.json')
-          .then(this.handleGetDataSucc.bind(this))
-          .catch(this.handleGetDataErr.bind(this))
+        axios.get('./api/index.json',{
+					
+				})
+        .then(this.handleGetDataSucc.bind(this))
+        .catch(this.handleGetDataErr.bind(this))
     },
     handleGetDataSucc (res) {
-        console.log(res.data.data.swiperList)
-        console.log(res.data.data.iconList)
         this.swiperList = res.data.data.swiperList
         this.iconList = res.data.data.iconList
     },
@@ -77,7 +77,7 @@ export default {
 			// this.$router.push({ path: '/city', query: { id: 123 }})
 			this.$router.push({ name: 'City', params: { id: 123 }})
 		}
-  },   
+  },
   created () {
     this.getIndexData()
     console.log(this.city)
@@ -86,10 +86,12 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
   @import '../../assets/stylus/varibles.styl'
   #index_page
     background: #f5f5f5
+    width: 100%
+    overflow-x: hidden
     .index_location_ul
       width: 100%
       display: flex

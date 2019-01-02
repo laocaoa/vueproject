@@ -9,7 +9,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import './assets/css/reset.css'
 import './assets/css/iconfont/iconfont.css'
 import 'swiper/dist/css/swiper.css'
-import store from '@/store/store'
+import store from './store/store'
 
 FastClick.attach(document.body)
 Vue.config.productionTip = false
