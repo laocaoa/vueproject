@@ -174,6 +174,7 @@ export default {
   }
   .header_left{
     display: flex;
+	align-items: flex-end;
   }
   .header_name{
     color: #212121;

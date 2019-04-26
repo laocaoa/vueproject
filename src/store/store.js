@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import state from './state'
+
 Vue.use(Vuex)
 const store = new Vuex.Store({
   state,
@@ -19,7 +20,15 @@ const store = new Vuex.Store({
   mutations: {
     changeCity (state, city) {
       state.city = city
-    }
+    },
+		changeDownload (state, flag) {
+			if (flag === false) {
+				try{
+					localStorage.download = true
+				}catch(e){}
+			}
+			state.download = flag
+		}
   }
 })
 export default store

@@ -7,7 +7,7 @@
       <li class="location_ul_left location_ul_li">
         <span class="iconfont location">&#xe647;</span>定位失败
       </li>
-      <li class="location_ul_right location_ul_li" @click="change">
+      <li class="location_ul_right location_ul_li" @click="change" ref="xili">
 				<span class="iconfont world">&#xe670;</span>必游榜单
 			</li>
     </ul>
@@ -19,6 +19,7 @@
     <index-guss></index-guss>
     <index-weekend></index-weekend>
     <index-footer></index-footer>
+		<down-load></down-load>
   </div>
 </template>
 
@@ -32,6 +33,9 @@ import IndexWeekend from './weekend'
 import IndexFooter from './footer'
 import axios from 'axios'
 import { mapState, mapMutations, mapGetters, mapActions } from 'vuex'
+import downLoadJs from '../../mixins/download.js'
+import DownLoad from '../../components/common/download/index.vue'
+import util from '../../utils/dom.js'
 export default {
   name: 'index',
   components: {
@@ -41,15 +45,18 @@ export default {
 		IndexHot,
     IndexGuss,
     IndexWeekend,
-    IndexFooter
+    IndexFooter,
+		DownLoad
   },
   data () {
     return {
         swiperList: [],
         iconListOne: [],
-        iconList: []
+        iconList: [],
+				download: true
     }  
   },
+	// mixins: [downLoadJs],
 	computed: {
 		...mapState(['city']),
 		...mapGetters(['doubleCity'])
@@ -59,7 +66,9 @@ export default {
 		...mapActions(['changeCityFiveSeconds']),
     getIndexData () {
         axios.get('./api/index.json',{
-					
+					params: {
+						
+					}
 				})
         .then(this.handleGetDataSucc.bind(this))
         .catch(this.handleGetDataErr.bind(this))
@@ -72,9 +81,9 @@ export default {
         console.log('error')
     },
 		change () {
-			this.changeCity('哈尔滨')
+			this.changeCity('内蒙古阿拉善左旗')
 			this.changeCityFiveSeconds('日本')
-			// this.$router.push({ path: '/city', query: { id: 123 }})
+// 		this.$router.push({ path: '/city', query: { id: 123 }})
 			this.$router.push({ name: 'City', params: { id: 123 }})
 		}
   },
@@ -82,7 +91,10 @@ export default {
     this.getIndexData()
     console.log(this.city)
 		console.log(this.doubleCity)
-  }
+  },
+	mounted () {
+    console.log(window.getComputedStyle(this.$refs.xili).height)
+	}
 }
 </script>
 
@@ -124,6 +136,7 @@ export default {
           position: relative
           top: 0.03rem
           margin-right: .07rem
+					font-size: .32rem
     .index_tour_ul
       display: flex
       flex-wrap: wrap

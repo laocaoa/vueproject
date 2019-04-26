@@ -4,7 +4,9 @@
     <div class="search">
       <span class="iconfont search_font">&#xe60b;</span>请输入城市/景点/游玩主题
     </div>
-    <div class="city">{{city}}</div>
+		<router-link to="/city">
+				<div class="city">{{city}}</div>
+		</router-link>
   </div>
 </template>
 

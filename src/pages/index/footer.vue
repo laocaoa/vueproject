@@ -52,7 +52,7 @@ export default {
     color: #616161
     .price-desc-info
       font-size: .24rem
-      display: inline-block
+      display: inline
       .info-heightLight
         font-weight: bold
   .main-nav

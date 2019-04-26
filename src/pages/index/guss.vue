@@ -5,7 +5,7 @@
       <span class="title">猜你喜欢</span>
     </div>
     <ul>
-      <li v-for="item of 6">
+      <router-link tag="li" v-for="item of 6" :to="'/detail/' + item" :key="item">
         <div class="like-img-box"><img src="http://img1.qunarzz.com/sight/p0/1712/95/95f38f28a6ff19cba3.img.jpg_200x200_af967e35.jpg" alt=""></div>
         <div class="like-img-tag">随买随用</div>
         <div class="like-info">
@@ -23,7 +23,7 @@
             <div class="price-right">奥林匹克公园</div>
           </div>
         </div>
-      </li>
+      </router-link>
     </ul>
     <a href="#" class="check-all-product">查看所有产品</a>
   </div>
