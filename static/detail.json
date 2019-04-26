@@ -1,0 +1,147 @@
+{
+  "ticketList": [{
+    "title": "故宫成人票",
+    "list": [{
+      "title": "上午场",
+      "desc": "比较贵",
+      "price": "36.8",
+      "show": true,
+      "suppliers": [{
+      	"name": "去那自营1",
+      	"show": true
+      },{
+      	"name": "去那自营2",
+      	"show": true
+      },{
+      	"name": "去那自营3",
+      	"show": false
+      }]
+    },{
+      "title": "下午场",
+      "desc": "便宜呦",
+      "price": "26.8",
+      "show": true,
+      "suppliers": [{
+      	"name": "去那自营1",
+      	"show": true
+      },{
+      	"name": "去那自营2",
+      	"show": true
+      },{
+      	"name": "去那自营3",
+      	"show": false
+      }]
+    },{
+      "title": "午夜场",
+      "desc": "最划算",
+      "price": "16.8",
+      "show": false,
+      "suppliers": [{
+      	"name": "去那自营1",
+      	"show": true
+      },{
+      	"name": "去那自营2",
+      	"show": true
+      },{
+      	"name": "去那自营3",
+      	"show": false
+      }]
+    }]
+  },{
+    "title": "故宫儿童票",
+    "list": [{
+      "title": "上午场",
+      "desc": "比较贵",
+      "price": "36.8",
+      "show": true,
+      "suppliers": [{
+      	"name": "去那自营1",
+      	"show": true
+      },{
+      	"name": "去那自营2",
+      	"show": true
+      },{
+      	"name": "去那自营3",
+      	"show": false
+      }]
+    },{
+      "title": "下午场",
+      "desc": "便宜呦",
+      "price": "26.8",
+      "show": true,
+      "suppliers": [{
+      	"name": "去那自营1",
+      	"show": true
+      },{
+      	"name": "去那自营2",
+      	"show": true
+      },{
+      	"name": "去那自营3",
+      	"show": false
+      }]
+    },{
+      "title": "午夜场",
+      "desc": "最划算",
+      "price": "16.8",
+      "show": false,
+      "suppliers": [{
+      	"name": "去那自营1",
+      	"show": true
+      },{
+      	"name": "去那自营2",
+      	"show": true
+      },{
+      	"name": "去那自营3",
+      	"show": false
+      }]
+    }]
+  },{
+    "title": "故宫老年票",
+    "list": [{
+      "title": "上午场",
+      "desc": "比较贵",
+      "price": "36.8",
+      "show": true,
+      "suppliers": [{
+      	"name": "去那自营1",
+      	"show": true
+      },{
+      	"name": "去那自营2",
+      	"show": true
+      },{
+      	"name": "去那自营3",
+      	"show": false
+      }]
+    },{
+      "title": "下午场",
+      "desc": "便宜呦",
+      "price": "26.8",
+      "show": true,
+      "suppliers": [{
+      	"name": "去那自营1",
+      	"show": true
+      },{
+      	"name": "去那自营2",
+      	"show": true
+      },{
+      	"name": "去那自营3",
+      	"show": false
+      }]
+    },{
+      "title": "午夜场",
+      "desc": "最划算",
+      "price": "16.8",
+      "show": false,
+      "suppliers": [{
+      	"name": "去那自营1",
+      	"show": true
+      },{
+      	"name": "去那自营2",
+      	"show": true
+      },{
+      	"name": "去那自营3",
+      	"show": false
+      }]
+    }]
+  }]
+}
